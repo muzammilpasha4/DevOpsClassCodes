@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('checkout') {
             steps {
-                echo 'git checkout'
-                sh 'https://github.com/muzammilpasha4/DevOpsClassCodes'
+                git clone 'https://github.com/muzammilpasha4/DevOpsClassCodes'
             }
         }
         stage('compilinng'){
