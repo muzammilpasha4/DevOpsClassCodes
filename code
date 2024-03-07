@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('checkout') {
             steps {
-                git clone 'https://github.com/muzammilpasha4/DevOpsClassCodes'
+                git 'https://github.com/muzammilpasha4/DevOpsClassCodes'
             }
         }
         stage('compilinng'){
